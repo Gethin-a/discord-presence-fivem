@@ -2,17 +2,17 @@
 
 Citizen.CreateThread(function()
 	while true do
-		SetDiscordAppId(1078322108066705540) 
+		SetDiscordAppId(add your discord appid here) 
 		SetDiscordRichPresenceAsset('image1') 
         SetDiscordRichPresenceAssetText('Come and join us!') 
         SetDiscordRichPresenceAssetSmall('image2')
         SetDiscordRichPresenceAssetSmallText('Verified Fun!!')
-    SetDiscordRichPresenceAction(0, "Discord!", "https://discord.gg/Vj7Xxz92ED")
-    SetDiscordRichPresenceAction(1, "FiveM!", "fivem://connect/134.255.234.40")
-		Citizen.Wait(30*1000) 
+    SetDiscordRichPresenceAction(0, "Discord!", "https://discord.gg/Vj7Xxz92ED") - your discord link here
+    SetDiscordRichPresenceAction(1, "FiveM!", "fivem://connect/134.255.234.40")- your fivem server ip here
+		Citizen.Wait(30*1000) - how long it takes to refresh (30seconds)
 	end
 end)
-
+---- dont edit any of this ----
 Citizen.CreateThread(function()
 	while true do
 		local VehName = GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(GetVehiclePedIsUsing(PlayerPedId()))))
